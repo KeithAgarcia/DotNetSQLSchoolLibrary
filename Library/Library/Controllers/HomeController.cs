@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using DotNetSQLSchoolLibrary.Models;
 
-namespace DotNetSQLSchoolLibrary.Controllers
+namespace Library.Controllers
 {
     public class HomeController : Controller
     {
@@ -31,7 +29,7 @@ namespace DotNetSQLSchoolLibrary.Controllers
 
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
     }
 }
